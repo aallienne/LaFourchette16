@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Fourchette Angoumoisine — Restaurant</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-   <!-- ══════════════ HERO ══════════════ -->
+    <!-- ══════════════ HERO ══════════════ -->
     <header class="hero">
         <div class="hero__noise"></div>
         <nav class="nav">
@@ -44,15 +45,236 @@
     </section>
 
     <!-- ══════════════ MENUS ══════════════ -->
-    <section class="section" id="menus">  
+    <section class="section" id="menus">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow">Formules</span>
+                <h2 class="section__title">Nos Menus</h2>
+            </header>
+
+            <div class="menus-grid">
+
+                <article class="menu-card menu-card--marche">
+                    <div class="menu-card__badge">Le plus populaire</div>
+                    <div class="menu-card__header">
+                        <span class="menu-card__num">01</span>
+                        <h3 class="menu-card__name">Menu du Marché</h3>
+                    </div>
+                    <ul class="menu-card__courses">
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Entrée du jour</strong>
+                                <span>Selon l'arrivage du marché</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Plat du jour</strong>
+                                <span>Viande ou poisson avec garniture</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Dessert maison</strong>
+                                <span>Pâtisserie ou fromage</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-card__price">24 <sup>€</sup></div>
+                </article>
+
+                <article class="menu-card menu-card--gourmand">
+                    <div class="menu-card__header">
+                        <span class="menu-card__num">02</span>
+                        <h3 class="menu-card__name">Menu Gourmand</h3>
+                    </div>
+                    <ul class="menu-card__courses">
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Entrée au choix</strong>
+                                <span>Parmi notre sélection</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Plat au choix</strong>
+                                <span>Viande, poisson ou végétarien</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Fromage ou dessert</strong>
+                                <span>Selon votre préférence</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-card__price">32 <sup>€</sup></div>
+                </article>
+
+                <article class="menu-card menu-card--decouverte">
+                    <div class="menu-card__header">
+                        <span class="menu-card__num">03</span>
+                        <h3 class="menu-card__name">Menu Découverte</h3>
+                    </div>
+                    <ul class="menu-card__courses">
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Mise en bouche</strong>
+                                <span>Création du chef</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Entrée signature</strong>
+                                <span>Sélection du marché</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Plat signature</strong>
+                                <span>Spécialité de la maison</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="course__dot"></span>
+                            <div>
+                                <strong>Fromage &amp; dessert</strong>
+                                <span>Assortiment gourmand</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="menu-card__price">45 <sup>€</sup></div>
+                </article>
+
+            </div>
+        </div>
     </section>
 
     <!-- ══════════════ CARTE ══════════════ -->
-    <section class="section section--dark" id="carte">        
+    <section class="section section--dark" id="carte">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow section__eyebrow--light">À la carte</span>
+                <h2 class="section__title section__title--light">Quelques Plats</h2>
+            </header>
+
+            <div class="carte-grid">
+
+                <div class="carte-col">
+                    <h3 class="carte-col__title">
+                        <span class="carte-col__icon">◇</span> Entrées
+                    </h3>
+                    <div class="dish-list">
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Velouté de saison</strong>
+                                <em>Crème fraîche et croûtons maison</em>
+                            </div>
+                            <span class="dish-item__price">8€</span>
+                        </div>
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Salade de chèvre chaud</strong>
+                                <em>Sur lit de mesclun et noix</em>
+                            </div>
+                            <span class="dish-item__price">10€</span>
+                        </div>
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Terrine de campagne</strong>
+                                <em>Cornichons et pain grillé</em>
+                            </div>
+                            <span class="dish-item__price">9€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-col">
+                    <h3 class="carte-col__title">
+                        <span class="carte-col__icon">◇</span> Plats
+                    </h3>
+                    <div class="dish-list">
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Magret de canard</strong>
+                                <em>Sauce fruits rouges, gratin dauphinois</em>
+                            </div>
+                            <span class="dish-item__price">22€</span>
+                        </div>
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Pavé de saumon</strong>
+                                <em>Risotto aux légumes de saison</em>
+                            </div>
+                            <span class="dish-item__price">20€</span>
+                        </div>
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Confit de canard</strong>
+                                <em>Pommes sarladaises et salade</em>
+                            </div>
+                            <span class="dish-item__price">19€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carte-col">
+                    <h3 class="carte-col__title">
+                        <span class="carte-col__icon">◇</span> Desserts
+                    </h3>
+                    <div class="dish-list">
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Tarte tatin</strong>
+                                <em>Tiède avec crème fraîche</em>
+                            </div>
+                            <span class="dish-item__price">7€</span>
+                        </div>
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Moelleux au chocolat</strong>
+                                <em>Cœur coulant et glace vanille</em>
+                            </div>
+                            <span class="dish-item__price">8€</span>
+                        </div>
+                        <div class="dish-item">
+                            <div class="dish-item__info">
+                                <strong>Crème brûlée</strong>
+                                <em>Vanille de Madagascar</em>
+                            </div>
+                            <span class="dish-item__price">7€</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- ══════════════ FOOTER ══════════════ -->
     <footer class="footer" id="contact">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <p class="footer__name">La Fourchette Angoumoisine</p>
+                <p class="footer__copy">&copy; Tous droits réservés</p>
+            </div>
+            <div class="footer__divider" aria-hidden="true"></div>
+            <address class="footer__contact">
+                <p>📍 123 Rue Frankin, 16000 Angoulême</p>
+                <p>📞 05 45 40 67 89</p>
+                <p>✉️ <a href="mailto:prenom.nom@lafourchette16.fr">prenom.nom@lafourchette16.fr</a></p>
+                <p class="footer__hours">Mardi – Samedi &nbsp;·&nbsp; 12h–14h30 &amp; 19h–23h</p>
+            </address>
+        </div>
     </footer>
 
 </body>
